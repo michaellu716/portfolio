@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="prism-atom-dark.css" type="text/css" media="screen"/>
+	    <script type="text/javascript" src="prism.js"></script>
+	    <script type="text/javascript" src="prism.ruby.js"></script>
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	    <title>Mike Lu</title>
+	    <meta name="description" content="Mike Lu is a professional
+        software engineer specializing in full-stack development.
+        He has extensive experience with Ruby, Rails, JavaScript,
+        and building web applications.">
+	</head>
+	
+	<body>
+	  <div class="about-container">
+		<div class="header-menu">  
+		<ul>
+		    <li><a href="#" class="nav-link">About</li>
+		   <!--  <li><a href="#code-samples" class="nav-link">Code Samples</li> -->
+		    <li><a href="#web-apps" class="nav-link">Web Apps</li>
+			<li><a href="#web-design" class="nav-link">Web Design</li>
+		    <li><a href="#skills-and-tools" class="nav-link">Skills &amp; Tools</li>
+		    <li class="hire-me"><a href="#hire-me" class="nav-link">HIRE ME</a></li>
+		</ul>  
+		</div>
+		
+	    <div class="about">
+	      <img src="img/me.jpg" class="me" />
+	      <h1>Mike Lu</h1>
+	      <h2>SOFTWARE ENGINEER</h2>
+	
+	      <hr class="grey"/>
+	      <p class="bio">
+	        I am a software engineer with over 3 years of experience at a startup building and designing web applications. Check out my portfolio below.	     
+	         </p>
+	         <a href="mailto:michael_108@hotmail.com"><i class="fa fa-envelope"></i></a>
+	    </div>
+	  </div>
+ 
+<!--
+	  <h3 id="code-samples">Code Snippets</h3>
+	  <hr class="yellow">
+	  
+	  <div class="box">
+		   <h4>Temperature Conversion</h4>
+			  <p>
+			    This Ruby program will prompt the user for a temperature
+			    in degrees Celsius and let the user know what the
+			    corresponding temperature is in Fahrenheit.
+			  </p>
+	  </div>
+	  
+	  <div class="box">
+	  <pre><code class="language-ruby">puts &quot;Enter degrees in Celcius: &quot;
+convertToF = (gets.to_i * 1.8) + 32
+puts &quot;The temperature is #{convertToF.to_i} degrees Fahrenheit&quot;</code></pre>	 
+	</div>
+	  
+	  <br class="clear" />
+	  
+	  <div class="box">
+	  <pre><code class="language-ruby">puts &quot;Enter a number: &quot;
+#convert to int and store in var
+number = gets.chomp.to_i
+#lop off right most digit
+ordinal = number % 10
+if ordinal == 1 &amp;&amp; number == 1
+        puts &quot;That's the #{number}st item!&quot;
+    elsif ordinal == 2 &amp;&amp; number == 2
+        puts &quot;That's the #{number}nd item!&quot;
+    elsif ordinal == 3 &amp;&amp; number == 3
+        puts &quot;That's the #{number}rd item!&quot;
+    else
+        puts &quot;That's the #{number}th item!&quot;
+end</code></pre>
+	  </div>
+	
+	  <div class="box">
+	    <h4>Ordinal Challenge</h4>
+		  <p>
+		    This Ruby program will convert a plain number
+		    to the ordinal of the number. So for example,
+		    if the user enters 2, it will display 2nd, if
+		    the user enters 3, it will display 3rd, etc.
+		  </p>
+	  </div>
+	
+	  <br class="clear" />
+	  <div class="box">
+	  	<h4>Foobar</h4>
+		  <p>
+		    This Ruby program is an adaptation of a classic technical
+		    interview problem which displays sequences
+		    of the Foobar pattern.
+		  </p>
+	  </div>
+	
+	  <div class="box">
+	  <pre><code class="language-ruby">puts &quot;How many items do you want to see?&quot;
+items = gets.chomp.to_i
+ #the given number will determine how many times it needs to be looped
+ items.times do |n|
+  #notes for divisibility by 3 and 5 
+  n += 1 #beause it kept starting at 0 instead of 1
+  if n % 3 == 0 &amp;&amp; n % 5 != 0
+    puts &quot;Foo&quot;
+  elsif n % 5 == 0 &amp;&amp; n % 3 != 0
+   puts &quot;Bar&quot;
+  elsif n % 5  == 0 &amp;&amp; n % 3 == 0
+    puts &quot;Foobar&quot;
+  else puts &quot;#{n}&quot;
+  end
+ end</code></pre>
+	  </div>
+-->
+	  
+	 <h3 id="web-apps">Web Apps</h3>
+	  <hr class="yellow" />
+	  <div class="box">
+      	<h4>Quote Generator</h4>
+      	<a href="https://cryptic-forest-93938.herokuapp.com/" target="_blank"><img src="img/splurty.png" class="full-width" /></a>
+      	<p>
+          A database-powered quote generator with a mobile-first
+          design, using the Ruby on Rails framework, HTML, and CSS.
+          Uses Git and GitHub for version control, and launched
+          on Heroku.
+      </p>
+     </div>
+     
+     <div class="box">
+      <h4>Yelp Clone</h4>
+      <a href="https://nomster-mike-lu.herokuapp.com/" target="_blank"><img src="img/nomster.png" class="full-width" /></a>
+      <p>
+        A Yelp clone that integrates with the Google Maps API
+        and includes features like user comments, star ratings,
+        image uploading, and user authentication.
+      </p>
+    </div>
+     <br class="clear" />
+    
+    <div class="box">
+      <h4>Two-Sided Market Place</h4>
+      <a href="https://flixter-mike-lu.herokuapp.com/" target="_blank"><img src="img/flixter.png" class="full-width" /></a>
+      <p>
+        A two-sided, video-streaming marketplace platform that
+        features credit card payment capabilities, user role
+        management, complex user interfaces, and advanced
+        database relationships.
+      </p>
+    </div>
+    
+    <div class="box">
+      <h4>Test Driven Development</h4>
+      <a href="https://grammable-mike-lu.herokuapp.com/" target="_blank"><img src="img/grammable.png" class="full-width" /></a>
+      <p>
+        An Instagram clone that was built using industry-standard, test-driven
+        development following numerous red/green/refactor cycles.
+      </p>
+    </div>
+    
+    <br class="clear" />
+    <div class="box">
+      <h4>Single Page Todo Application</h4>
+      <a href="https://todoster-mike-lu.herokuapp.com/?" target="_blank"><img src="img/todoster.png" class="full-width" /></a>
+      <p>
+        This single-page to-do application features a
+        fluid user interface that– by using JavaScript–
+        allows users to rapidly add dynamic content.
+      </p>
+    </div>
+    <div class="box">
+      <h4>Agile Team Project</h4>
+      <img src="img/chess.png" class="full-width" />
+      <p>
+        Worked on an Agile software development team building
+        a chess application. Under the guidance of a senior software engineer,
+        we had weekly Agile team meetings for code reviews, sprint planning,
+        and feature assignments.
+      </p>
+    </div>
+    <br class="clear" />
+    
+    <h3 id="web-design">Web Design</h3>
+	  <hr class="yellow" />
+	  <div class="box">
+      <h4>HQHT</h4>
+      <a href="https://www.hqhtherapy.com/" target="_blank"><img src="img/hqht1.png" class="full-width" /></a>
+      <p>
+        Redesigned High Quality Home Therapy startup website with parallax scrolling and wireframing.
+      </p>
+    </div>
+    
+    <div class="box">
+      <h4>RRR Associations</h4>
+      <img src="img/rrr2.png" class="full-width" />
+      <p>
+        Redesigned wordpress site and created site to be responsive on all devices.
+      </p>
+    </div>
+    
+    <br class="clear" />
+    <div class="box">
+      <h4>PRXNYC</h4>
+      <img src="img/prxnyc.png" class="full-width" />
+      <p>
+        Built and designed eCommerce site and integrated payment portal using Paypal API.
+      </p>
+    </div>
+
+    
+     <br class="clear" />
+
+	 
+	<h3 id="skills-and-tools">Skills &amp; Tools</h3>
+	<hr class="yellow" /> 
+    
+    <div class="icons">
+	    <img src="img/github.png" class="icon"/>
+	    <img src="img/tfs.png" class="icon"/>
+	    <img src="img/aws.png" class="icon"/>
+	    <img src="img/rubocop.png" class="icon"/>
+	    <img src="img/trello.png" class="icon"/>
+	    <img src="img/slack.png" class="icon"/>
+	    <img src="img/codeship.png" class="icon"/>
+ 
+    <br class="clear" />
+    <img src="img/skills.png"/>
+    </div>   
+    <br class="clear" />
+    <br class="clear" />
+    <br class="clear" />
+    
+    <div class="contact-me" id="hire-me">
+		<h3 class="contact-headline">Contact</h3>
+		<hr class="yellow" />
+        <p>
+	        <a href="mailto:michael_108@hotmail.com" class="contact-link">
+	          michael_108@hotmail.com
+	        </a>
+      </p>
+    </div>
+    
+</body>	
+</html>
